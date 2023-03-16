@@ -1,0 +1,16 @@
+{
+	"name": "plop-prettier",
+	"version": "0.0.0",
+	"author": "Aarron Tame",
+	"license": "ISC",
+	"description": "",
+	"keywords": [],
+	"scripts": {
+		"plop": "plop",
+		"test": "vitest"
+	},
+	"devDependencies": {
+		"jsdom": "^21.1.1",
+		"vitest": "0.29.3"
+	}
+}

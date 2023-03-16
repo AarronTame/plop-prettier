@@ -1,0 +1,34 @@
+{
+	"name": "@a.tame/plop-prettier",
+	"version": "0.0.0",
+	"author": "Aarron Tame",
+	"private": "true",
+	"license": "MIT",
+	"description": "",
+	"keywords": [],
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"type": "module",
+	"engines": {
+		"node": "^16.x || ^17.x || ^18.x || ^19.x"
+	},
+	"scripts": {
+		"lint": "tsc",
+		"build": "tsup",
+		"plop": "cd ./example && pnpm plop",
+		"test": "cd ./example && pnpm plop && pnpm test"
+	},
+	"peerDependencies": {
+		"plop": "^3.1.2",
+		"prettier": "^2.8.4"
+	},
+	"devDependencies": {
+		"@changesets/cli": "^2.26.0",
+		"@types/node": "^18.15.3",
+		"@types/prettier": "^2.7.2",
+		"plop": "^3.1.2",
+		"prettier": "^2.8.4",
+		"tsup": "^6.6.3",
+		"typescript": "^4.9.5"
+	}
+}
