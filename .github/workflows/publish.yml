@@ -31,7 +31,7 @@ jobs:
         with:
           commit: "chore: update versions"
           title: "chore: update versions"
-          publish: pnpm run build && changeset publish --otp={${{ secrets.NPM_TOKEN }}}
+          publish: pnpm run build && changeset publish --otp=${{ secrets.NPM_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
