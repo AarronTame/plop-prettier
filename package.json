@@ -16,7 +16,8 @@
 		"lint": "tsc",
 		"build": "tsup",
 		"plop": "cd ./example && pnpm plop",
-		"test": "cd ./example && pnpm plop && pnpm test"
+		"test": "cd ./example && pnpm plop && pnpm test",
+		"release": "pnpm build && changeset publish"
 	},
 	"peerDependencies": {
 		"plop": "^3.1.2",
