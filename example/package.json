@@ -7,7 +7,7 @@
 	"keywords": [],
 	"scripts": {
 		"plop": "plop",
-		"test": "vitest"
+		"test": "vitest run"
 	},
 	"devDependencies": {
 		"jsdom": "^21.1.1",
