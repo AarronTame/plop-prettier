@@ -34,7 +34,7 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: pnpm run build && pnpm changeset publish --otp=${{ secrets.NPM_TOKEN }}
+          publish: pnpm run build && pnpm changeset publish --otp={${{ secrets.NPM_TOKEN }}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
