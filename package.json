@@ -2,13 +2,15 @@
 	"name": "@a.tame/plop-prettier",
 	"version": "0.1.1",
 	"author": "Aarron Tame",
-	"private": "true",
 	"license": "MIT",
 	"description": "",
 	"keywords": [],
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"type": "module",
+	"repository": {
+		"url": "https://github.com/AarronTame/plop-prettier"
+	},
 	"engines": {
 		"node": "^16.x || ^17.x || ^18.x || ^19.x"
 	},
