@@ -37,4 +37,5 @@ jobs:
 
       - run: pnpm run lint && pnpm run build
 
+      - run: cd ./example pnpm install
       - run: pnpm run test
