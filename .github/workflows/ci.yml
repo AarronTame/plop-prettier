@@ -18,8 +18,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-        strategy:
-    matrix:
+    strategy:
+      matrix:
         node-version: [16, 17, 18, 19]
     steps:
       - uses: actions/checkout@v3
@@ -36,5 +36,5 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - run: pnpm run lint && pnpm run build
-      
+
       - run: pnpm run ci:test
